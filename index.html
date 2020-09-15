@@ -5,33 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styleForHtmlWeek2-3.css" />
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>singolo</title>
 </head>
 
 <body>
-    <h1>singolo</h1>
-    <div class="hiddenList"></div>
-    <div class="hiddenMenu">
-        <div class="">
-            <div class="">
-                <div class="">&#9776;</div><a href="#">SINGOLO<sup>&#8727;</sup></a>
-            </div>
-            <div class=""><a href="#" class="">HOME</a></div>
-            <div class=""><a href="#" class="">SERVICES</a></div>
-            <div class=""><a href="#" class="">PORTFOLIO</a></div>
-            <div class=""><a href="#" class="">ABOUT</a></div>
-            <div class=""><a href="#" class="">CONTACT</a>
-            </div>
-        </div>
-    </div>
     <header>
-
         <nav class="fixednav">
             <div class="navwrap">
                 <div class="leftnav">
-                    <div class="menuButton">&#9776;</div><a href="#">SINGOLO<sup>&#8727;</sup></a>
+                    <div onclick="MenuShow1()" class="menuButton">&#9776;</div><a href="#">SINGOLO<sup>&#8727;</sup></a>
                 </div>
                 <div class="rightnav"><a href="#" class="rightnav">HOME</a></div>
                 <div class="rightnav"><span class="beforeText"></span><a href="#" class="rightnav">SERVICES</a></div>
@@ -45,6 +29,21 @@
     </header>
 
     <main>
+        <h1>singolo</h1>
+        <div class="hiddenList"></div>
+        <nav class="hiddenMenu">
+            <div class="hiddenMenuButtonLogo">
+                <div onclick="MenuShow2()" class="hiddenMenuButton">&#9776;</div>
+                <div class="hiddenMenuLogo"><a href="#" class="Text">SINGOLO<sup>&#8727;</sup></a></div>
+            </div>
+            <div class="hiddenMenuWraper">
+                <div class="hiddenMenuMaring"><a href="#" class="Text">HOME</a></div>
+                <div class="hiddenMenuMaring"><a href="#" class="Text">SERVICES</a></div>
+                <div class="hiddenMenuMaring"><a href="#" class="Text">PORTFOLIO</a></div>
+                <div class="hiddenMenuMaring"><a href="#" class="Text">ABOUT</a></div>
+                <div class="hiddenMenuMaring"><a href="#" class="Text">CONTACT</a></div>
+            </div>
+        </nav>
         <section>
             <div class="slideshow-container">
 
@@ -124,6 +123,7 @@
                     </li>
                 </ul>
             </div>
+            <hr />
         </section>
         <section>
             <div class="Portfolio">
