@@ -2,19 +2,15 @@
   --header-color: #666d89;
   --text-color: #767e9e;
 }
-:root {
-  --header-color: #666d89;
-  --text-color: #767e9e;
+html {
+  scroll-behavior: smooth;
 }
-
 body {
-  margin: 0;
-  padding: 0;
+  min-width: 320px;
+  margin: 0px;
+  padding: 0px;
   font-family: Lato;
-}
-
-* {
-  box-sizing: border-box;
+  font-style: normal;
 }
 
 .visually-hidden {
@@ -106,16 +102,6 @@ body {
   font-size: 12px;
   line-height: 1.8;
   text-align: justify;
-}
-
-body {
-  margin: 0px;
-  font-family: Lato;
-  font-style: normal;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 sup {
@@ -270,7 +256,6 @@ footer {
 }
 
 .textPorfolio {
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
@@ -279,11 +264,9 @@ footer {
 
 .linkStyle > a {
   padding: 4px;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
-  /* identical to box height, or 100% */
   text-align: center;
   color: #767e9e;
   text-decoration: none;
@@ -291,9 +274,12 @@ footer {
   box-sizing: border-box;
   border-radius: 5px;
 }
+.linkStyle > a:hover {
+  color: #2d303a;
+  background-color: #f2f2f2;
+}
 
 .titlePortfolio {
-  font-style: normal;
   font-weight: 900;
   font-size: 30px;
   line-height: 36px;
@@ -304,7 +290,6 @@ footer {
 .ImgPortfolio {
   columns: 4;
   column-gap: 30px;
-  font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
@@ -371,7 +356,6 @@ footer {
     grid-template-columns: calc(100% / 2) calc(100% / 2);
     columns: 2;
   }
-
 }
 
 @media (max-width: 666px) {
