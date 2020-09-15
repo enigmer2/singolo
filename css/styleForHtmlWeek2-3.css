@@ -231,74 +231,11 @@ h1 {
   justify-content: space-between;
 }
 
-.wrap {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: justify;
-}
-
-.conteinText {
-  /* border: 2px solid yellow;*/
-  display: flex;
-  flex: 1;
-  padding: 10px;
-  max-width: 300px;
-}
-
-.textLogo {
-  vertical-align: middle;
-  align-content: center;
-  width: auto;
-  height: 100%;
-}
-
 /*.Our_Services {
   background-color: #f2f2f2;
   padding: 60px 0px 46px 0px;
   height: auto;
-}
-*/
-
-.textcl {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 22px;
-  text-align: justify;
-  color: #767e9e;
-}
-
-.TextH1 {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0px 40px 0px 40px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  color: #767e9e;
-}
-
-.textLogo > img {
-  border-radius: 50%;
-  max-width: 100px;
-  max-height: 100px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--header-color);
-  padding: 20px 20px 20px 20px;
-  margin: 4px 4px 4px 4px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  flex-shrink: 0;
-}
+}*/
 
 footer {
   display: flex;
@@ -424,11 +361,6 @@ footer {
     columns: 3;
   }
 }
-@media (min-width: 1020px) {
-  .section-list__item:nth-of-type(3n) {
-    margin-right: 0;
-  }
-}
 
 /* 375px <= width < 768px */
 
@@ -439,11 +371,7 @@ footer {
     grid-template-columns: calc(100% / 2) calc(100% / 2);
     columns: 2;
   }
-  .wrap {
-    display: grid;
-    grid-template-columns: calc(100% / 2) calc(100% / 2);
-    columns: 2;
-  }
+
 }
 
 @media (max-width: 666px) {
@@ -495,28 +423,8 @@ footer {
     grid-template-columns: calc(100% / 1);
     columns: 1;
   }
-  .wrap {
-    margin: 0%;
-    display: grid;
-    grid-template-columns: calc(100% / 1);
-    columns: 1;
-  }
+
   .copy {
     display: none;
-  }
-  .conteinText {
-    padding: 0px;
-  }
-  .textLogo > img {
-    border-radius: 20px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--header-color);
-    padding: 10px 10px 10px 10px;
-    margin: 4px 4px 4px 4px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
   }
 }
