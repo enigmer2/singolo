@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  max-width: 1020px;
   min-width: 320px;
   margin: 0px;
   padding: 0px;
@@ -77,7 +78,7 @@ header > hr {
   z-index: 999999;
   background: #2d303a;
   box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
-  width: 278px;
+  min-width: 278px;
 }
 .hiddenMenuWraper {
   width: 200px;
@@ -458,7 +459,7 @@ footer {
 }
 
 /* 768px <= width < 1020px */
-@media (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1020px) {
   .ImgPortfolio > div:nth-child(1n + 13) {
     display: none;
     visibility: hidden;
@@ -466,7 +467,7 @@ footer {
 }
 
 /* 375px <= width < 768px */
-@media (max-width: 768px) {
+@media (min-width: 375px) and (max-width: 768px) {
   .ImgPortfolio {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -478,7 +479,7 @@ footer {
   }
 }
 
-@media (max-width: 666px) {
+@media (max-width: 767px) and (min-width: 375px) {
   .menuButton {
     display: block;
     float: left;
@@ -500,6 +501,11 @@ footer {
   .ImgPortfolio > div:nth-child(1n + 9) {
     display: none;
   }
+  .ImgPortfolio {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
   .beforeText {
     visibility: visible;
     display: none;
@@ -509,11 +515,13 @@ footer {
     background: #2d303a;
     justify-content: flex-end;
     flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
 /* width < 375px */
-@media (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 375px) {
   .ImgPortfolio {
     column-gap: 0px;
     grid-template-columns: calc(100% / 1);
