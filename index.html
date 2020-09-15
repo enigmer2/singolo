@@ -11,9 +11,23 @@
 </head>
 
 <body>
+    <h1>singolo</h1>
+    <div class="hiddenList"></div>
+    <div class="hiddenMenu">
+        <div class="">
+            <div class="">
+                <div class="">&#9776;</div><a href="#">SINGOLO<sup>&#8727;</sup></a>
+            </div>
+            <div class=""><a href="#" class="">HOME</a></div>
+            <div class=""><a href="#" class="">SERVICES</a></div>
+            <div class=""><a href="#" class="">PORTFOLIO</a></div>
+            <div class=""><a href="#" class="">ABOUT</a></div>
+            <div class=""><a href="#" class="">CONTACT</a>
+            </div>
+        </div>
+    </div>
     <header>
-        <h1>singolo</h1>
-        <div class="hiddenList"></div>
+
         <nav class="fixednav">
             <div class="navwrap">
                 <div class="leftnav">
@@ -31,20 +45,21 @@
     </header>
 
     <main>
-        <div class="slideshow-container">
+        <section>
+            <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <img src="img/1.jpg" style="width:100%">
+                <div class="mySlides fade">
+                    <img src="img/1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="img/2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.png" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="img/next.png" alt=""></a>
+
             </div>
-            <div class="mySlides fade">
-                <img src="img/2.jpg" style="width:100%">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.png" alt=""></a>
-            <a class="next" onclick="plusSlides(1)"><img src="img/next.png" alt=""></a>
-
-        </div>
-
+        </section>
         <section class="section">
             <div class="wrapper">
                 <h2 class="section__header">Our section</h2>
@@ -110,41 +125,43 @@
                 </ul>
             </div>
         </section>
+        <section>
+            <div class="Portfolio">
 
-        <div class="Portfolio">
-
-            <div class="titlePortfolio">
-                <h3>Portfolio</h3>
+                <div class="titlePortfolio">
+                    <h3>Portfolio</h3>
+                </div>
+                <div class="textPorfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas
+                    natus
+                    inventore quibusdam molestiae omnis repellendus suscipit nesciunt animi, iure accusamus dolores
+                    perspiciatis laboriosam exercitationem sapiente modi explicabo sunt quasi?</div>
+                <div class="navPortfolio">
+                    <nav class="linkStyle">
+                        <a href="">All</a>
+                        <a href="">Web Design</a>
+                        <a href="">Graphic Design</a>
+                        <a href="">Artwork</a>
+                    </nav>
+                </div>
+                <div class="ImgPortfolio">
+                    <div><img src="img\portfolio-1.png" alt=""></div>
+                    <div><img src="img\portfolio-2.png" alt=""></div>
+                    <div><img src="img\portfolio-3.png" alt=""></div>
+                    <div><img src="img\portfolio-4.png" alt=""></div>
+                    <div><img src="img\portfolio-5.png" alt=""></div>
+                    <div><img src="img\portfolio-6.png" alt=""></div>
+                    <div><img src="img\portfolio-7.png" alt=""></div>
+                    <div><img src="img\portfolio-8.png" alt=""></div>
+                    <div><img src="img\portfolio-9.png" alt=""></div>
+                    <div><img src="img\portfolio-10.png" alt=""></div>
+                    <div><img src="img\portfolio-11.png" alt=""></div>
+                    <div><img src="img\portfolio-12.png" alt=""></div>
+                    <div><img src="img\portfolio-10.png" alt=""></div>
+                    <div><img src="img\portfolio-11.png" alt=""></div>
+                    <div><img src="img\portfolio-12.png" alt=""></div>
+                </div>
             </div>
-            <div class="textPorfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas natus
-                inventore quibusdam molestiae omnis repellendus suscipit nesciunt animi, iure accusamus dolores
-                perspiciatis laboriosam exercitationem sapiente modi explicabo sunt quasi?</div>
-            <div class="navPortfolio">
-                <nav class="linkStyle">
-                    <a href="">All</a>
-                    <a href="">Web Design</a>
-                    <a href="">Graphic Design</a>
-                    <a href="">Artwork</a>
-                </nav>
-            </div>
-            <div class="ImgPortfolio">
-                <div><img src="img\portfolio-1.png" alt=""></div>
-                <div><img src="img\portfolio-2.png" alt=""></div>
-                <div><img src="img\portfolio-3.png" alt=""></div>
-                <div><img src="img\portfolio-4.png" alt=""></div>
-                <div><img src="img\portfolio-5.png" alt=""></div>
-                <div><img src="img\portfolio-6.png" alt=""></div>
-                <div><img src="img\portfolio-7.png" alt=""></div>
-                <div><img src="img\portfolio-8.png" alt=""></div>
-                <div><img src="img\portfolio-9.png" alt=""></div>
-                <div><img src="img\portfolio-10.png" alt=""></div>
-                <div><img src="img\portfolio-11.png" alt=""></div>
-                <div><img src="img\portfolio-12.png" alt=""></div>
-                <div><img src="img\portfolio-10.png" alt=""></div>
-                <div><img src="img\portfolio-11.png" alt=""></div>
-                <div><img src="img\portfolio-12.png" alt=""></div>
-            </div>
-        </div>
+        </section>
     </main>
     <hr />
     <footer>

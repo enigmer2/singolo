@@ -120,6 +120,17 @@ sup {
 .fixednav {
   background-color: #2d303a;
 }
+.hiddenMenu {
+  visibility: hidden;
+  display: none;
+  height: 100%;
+  font-size: 24px;
+  z-index: 99999999;
+  background: #2d303a;
+  box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  width: 278px;
+}
 .menuButton {
   visibility: hidden;
   display: none;
@@ -228,7 +239,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   background-color: #2d303a;
-  padding: 30px 29px 40px 40px;
+  padding: 22px 42px 22px 40px;
 }
 
 .copy {
@@ -252,7 +263,7 @@ footer {
 
 .navPortfolio {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .textPorfolio {
@@ -288,8 +299,10 @@ footer {
 }
 
 .ImgPortfolio {
-  columns: 4;
-  column-gap: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
@@ -304,7 +317,6 @@ footer {
 }
 
 .ImgPortfolio > div > img {
-  padding-top: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -318,8 +330,9 @@ footer {
   border-radius: 25px;
   width: 32px;
   height: 32px;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--header-color);
   margin: 0px 8px 0px 0px;
   -webkit-border-radius: 25px;
@@ -327,7 +340,13 @@ footer {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-
+.facebook:hover,
+.google:hover,
+.twitter:hover,
+.linkedin:hover {
+  color: #2d303a;
+  background-color: #f2f2f2;
+}
 /* 768px <= width < 1020px */
 @media (min-width: 1200px) {
   .fixednav {
@@ -339,11 +358,9 @@ footer {
 
 /* 768px <= width < 1020px */
 @media (max-width: 1020px) {
-  .ImgPortfolio {
-    display: grid;
-    width: 90%;
-    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
-    columns: 3;
+  .ImgPortfolio > div:nth-child(1n + 13) {
+    display: none;
+    visibility: hidden;
   }
 }
 
@@ -352,13 +369,19 @@ footer {
 @media (max-width: 768px) {
   .ImgPortfolio {
     display: grid;
-    width: 90%;
-    grid-template-columns: calc(100% / 2) calc(100% / 2);
-    columns: 2;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .ImgPortfolio > div:nth-child(1n + 13) {
+    display: none;
+    visibility: hidden;
   }
 }
 
 @media (max-width: 666px) {
+  .ImgPortfolio > div:nth-child(1n + 9) {
+    display: none;
+  }
   .hiddenList {
     display: block;
     visibility: visible;
@@ -378,25 +401,19 @@ footer {
     font-size: 50px;
     color: fff;
   }
+
   .rightnav {
-    padding-left: 25px;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: -0.035em;
+    display: none;
   }
   .beforeText {
     visibility: visible;
     display: none;
   }
   .navwrap {
-    display: block;
-    position: fixed;
+    display: flex;
     background: #2d303a;
-    width: 278px;
-    height: 400vw;
-    padding: 39px 0px 36px 20px;
     justify-content: flex-end;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 /* width < 375px */
@@ -406,6 +423,9 @@ footer {
     column-gap: 0px;
     grid-template-columns: calc(100% / 1);
     columns: 1;
+  }
+  .ImgPortfolio > div:nth-child(1n + 9) {
+    display: none;
   }
 
   .copy {
