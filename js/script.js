@@ -1,38 +1,25 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+$("#menu").click(function () {
+  $(".nav-level-5-grid-in-grid").attr("visibility", "visible");
+  $("#menu").toggleClass("nav-button-rotate");
+  $("#nav-level-3-black-list").toggleClass("nav-level-3-black-list");
+  $("#nav-level-2-black").toggleClass("nav-level-2-black2");
+});
 
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-function MenuShow1() {
-  $(".hiddenList").css("display", "block");
-  $(".hiddenMenu").css("display", "block");
-}
-function MenuShow2() {
-  $(".hiddenList").css("display", "none");
-  $(".hiddenMenu").css("display", "none");
-}
+$("#shuffle").click(function () {
+  $(".shuffle").shuffleChildren();
+});
+$("#shuffle2").click(function () {
+  $(".shuffle").shuffleChildren();
+});
+$("#shuffle3").click(function () {
+  $(".shuffle").shuffleChildren();
+});
+$("#shuffle4").click(function () {
+  $(".shuffle").shuffleChildren();
+});
+$(function () {
+  $("#slides").slidesjs({
+    width: 940,
+    height: 528,
+  });
+});

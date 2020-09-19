@@ -2,66 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styleForHtmlWeek2-3.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>singolo</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+
+    <title>Singolo</title>
 </head>
 
 <body>
-    <header>
-        <nav class="fixednav">
-            <div class="navwrap">
-                <div class="leftnav">
-                    <div onclick="MenuShow1()" class="menuButton">&#9776;</div><a href="#">SINGOLO<sup>&#8727;</sup></a>
-                </div>
-                <div class="rightnav"><a href="#" class="rightnav">HOME</a></div>
-                <div class="rightnav"><span class="beforeText"></span><a href="#" class="rightnav">SERVICES</a></div>
-                <div class="rightnav"><span class="beforeText"></span><a href="#" class="rightnav">PORTFOLIO</a></div>
-                <div class="rightnav"><span class="beforeText"></span><a href="#" class="rightnav">ABOUT</a></div>
-                <div class="rightnav"><span class="beforeText"></span><a href="#contact" class="rightnav">CONTACT</a>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__social-copy">&copy; Copyright 2013</div>
+            <nav class="footer__social-nav">
+                <ul>
+                    <li class="footer__social-nav-link">
+                        <a href="https://www.facebook.com">
+                            <img src="img\ico-facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://plus.google.com/">
+                            <img src="img\ico-google-plus.png" alt="google">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://twitter.com/">
+                            <img src="img\ico-twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://www.linkedin.com/feed/">
+                            <img src="img\ico-linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/slides.js"></script>
+    <script type="text/javascript" src="js/jquery.shiffle.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
+
+<!--
+        
+    <header class="header">
+        <nav class="nav-level-1-wrappper">
+            <div id="nav-level-2-black" class="nav-level-2-black">
+                <div id="nav-level-3-black-list">
+                    <div class="nav-level-4-grid">
+                        <div id="menu" class="nav-button">&#9776;</div>
+                        <div class="singolo">SINGOLO</div>
+                        <div class="between"></div>
+                        <ul class="nav-level-5-grid-in-grid">
+                            <li class="nav-before-text"><a href="#" class="">HOME</a></li>
+                            <li class="nav-before-text"><a href="#services" class="">SERVICES</a></li>
+                            <li class="nav-before-text"><a href="#portfolio" class="">PORTFOLIO</a></li>
+                            <li class="nav-before-text"><a href="#about" class="">ABOUT</a></li>
+                            <li class="nav-before-text"><a href="#contact" class="">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
-        <hr />
+        </div>
     </header>
 
     <main>
-        <h1>singolo</h1>
-        <div class="hiddenList"></div>
-        <nav class="hiddenMenu">
-            <div class="hiddenMenuButtonLogo">
-                <div onclick="MenuShow2()" class="hiddenMenuButton">&#9776;</div>
-                <div class="hiddenMenuLogo"><a href="#" class="Text">SINGOLO<sup>&#8727;</sup></a></div>
-            </div>
-            <div class="hiddenMenuWraper">
-                <div class="hiddenMenuMaring"><a href="#" class="Text">HOME</a></div>
-                <div class="hiddenMenuMaring"><a href="#" class="Text">SERVICES</a></div>
-                <div class="hiddenMenuMaring"><a href="#" class="Text">PORTFOLIO</a></div>
-                <div class="hiddenMenuMaring"><a href="#" class="Text">ABOUT</a></div>
-                <div class="hiddenMenuMaring"><a href="#" class="Text">CONTACT</a></div>
-            </div>
-        </nav>
-        <section>
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <img src="img/1.jpg" style="width:100%">
+        <h1 class="hidden"></h1>
+        <hr class="hr hr-first" />
+         Ниже Slideshow  
+        <section class="for-section__slides">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <div class="slide1">
+                                <img class="img_pos1" src="img/tel1.png" alt="">
+                                <img class="img_pos2" src="img/tel2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slide2">
+                                <img class="img_pos3" src="img/tel3.png" alt="">
+                                <img class="img_pos32" src="img/tel32.png" alt="">
+                                <img class="img_pos33" src="img/tel33.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left" href="#" role="button"></a>
+                    <a class="slider__control slider__control_right" href="#" role="button"></a>
                 </div>
-                <div class="mySlides fade">
-                    <img src="img/2.jpg" style="width:100%">
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)"><img src="img/prev.png" alt=""></a>
-                <a class="next" onclick="plusSlides(1)"><img src="img/next.png" alt=""></a>
-
             </div>
         </section>
+        <hr class="hr hr-second" />
+         Ниже Our Services 
         <section class="section">
-            <div class="wrapper">
-                <h2 class="section__header">Our section</h2>
+            <div class="wrapper2">
+                <h2 class="section__header">Our Services</h2>
                 <p class="section__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                     mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
                     dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -71,7 +123,7 @@
                         <div class="section-list__item-image"><img src="img\services-item-1--nocircle.svg"
                                 alt="Custom Design"></div>
                         <div class="section-list__description">
-                            <h3 class="section-list__item-header">Custom Design</h3>
+                            <h2 class="section-list__item-header">Custom Design</h2>
                             <p class="section-list__item-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus
                                 in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
@@ -80,7 +132,7 @@
                         <div class="section-list__item-image"><img src="img\services-item-2--nocircle.svg"
                                 alt="Custom Design"></div>
                         <div class="section-list__description">
-                            <h3 class="section-list__item-header">Custom Design</h3>
+                            <h3 class="section-list__item-header">Inovative Ideas</h3>
                             <p class="section-list__item-text">Curabitur vestibulum eget mauris quis laoreet.
                                 Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
@@ -89,7 +141,7 @@
                         <div class="section-list__item-image"><img src="img\services-item-3--nocircle.svg"
                                 alt="Custom Design"></div>
                         <div class="section-list__description">
-                            <h3 class="section-list__item-header">Custom Design</h3>
+                            <h3 class="section-list__item-header">Love Is The Answer</h3>
                             <p class="section-list__item-text">Curabitur vestibulum eget mauris quis laoreet.
                                 Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
@@ -98,7 +150,7 @@
                         <div class="section-list__item-image"><img src="img\services-item-4--nocircle.svg"
                                 alt="Custom Design"></div>
                         <div class="section-list__description">
-                            <h3 class="section-list__item-header">Custom Design</h3>
+                            <h3 class="section-list__item-header">Responsive Layout</h3>
                             <p class="section-list__item-text">Curabitur vestibulum eget mauris quis laoreet.
                                 Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         </div>
@@ -123,63 +175,55 @@
                     </li>
                 </ul>
             </div>
-            <hr />
         </section>
-        <section>
-
-            <div class="Portfolio">
-
-                <div class="titlePortfolio">
-                    <h3>Portfolio</h3>
+        <hr class="hr hr-third" />
+         Ниже Portfolio  
+        <section class="portfolio">
+            <div class="wrapper">
+                <div class="title-portfolio">
+                    <h2>Portfolio</h2>
                 </div>
-                <div class="textPorfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas
-                    natus
-                    inventore quibusdam molestiae omnis repellendus suscipit nesciunt animi, iure accusamus dolores
-                    perspiciatis laboriosam exercitationem sapiente modi explicabo sunt quasi?</div>
-                <div class="navPortfolio">
-                    <nav class="linkStyle">
-                        <a href="">All</a>
-                        <a href="">Web Design</a>
-                        <a href="">Graphic Design</a>
-                        <a href="">Artwork</a>
+                <p class="text-portfolio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quas
+                    natus inventore quibusdam molestiae omnis repellendus suscipit nesciunt animi, iure accusamus
+                    dolores
+                    perspiciatis laboriosam exercitationem sapiente modi explicabo sunt quasi?</p>
+                <div class="nav-portfolio">
+                    <nav>
+                        <ul class="link-style">
+                            <li>
+                                <button class="button" id="shuffle">All</button>
+                            </li>
+                            <li>
+                                <button class="button" id="shuffle2">Web Design</button>
+                            </li>
+                            <li>
+                                <button class="button" id="shuffle3">Graphic Design</button>
+                            </li>
+                            <li>
+                                <button class="button" id="shuffle4">Artwork</button>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
-                <div class="ImgPortfolio">
-                    <div><img src="img\portfolio-1.png" alt=""></div>
-                    <div><img src="img\portfolio-2.png" alt=""></div>
-                    <div><img src="img\portfolio-3.png" alt=""></div>
-                    <div><img src="img\portfolio-4.png" alt=""></div>
-                    <div><img src="img\portfolio-5.png" alt=""></div>
-                    <div><img src="img\portfolio-6.png" alt=""></div>
-                    <div><img src="img\portfolio-7.png" alt=""></div>
-                    <div><img src="img\portfolio-8.png" alt=""></div>
-                    <div><img src="img\portfolio-9.png" alt=""></div>
-                    <div><img src="img\portfolio-10.png" alt=""></div>
-                    <div><img src="img\portfolio-11.png" alt=""></div>
-                    <div><img src="img\portfolio-12.png" alt=""></div>
-                    <div><img src="img\portfolio-10.png" alt=""></div>
-                    <div><img src="img\portfolio-11.png" alt=""></div>
-                    <div><img src="img\portfolio-12.png" alt=""></div>
+                <div class="shuffle img-portfolio">
+                    <div class=""><img src="img\portfolio-1.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-2.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-3.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-4.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-5.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-6.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-7.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-8.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-9.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-10.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-11.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-12.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-10.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-11.png" alt=""></div>
+                    <div class=""><img src="img\portfolio-12.png" alt=""></div>
                 </div>
             </div>
-
         </section>
+        <hr class="hr hr-fourth" />
     </main>
-    <hr />
-    <footer>
-        <div id="contact" class="copy">&copy; Copyright 2013</div>
-        <div class="social">
-            <div class="facebook"><a href=""><img src="img\ico-facebook--nocircle.png" alt="facebook"></a></div>
-            <div class="google"><a href=""><img src="img\ico-google-plus--nocircle.png" alt="google"></a>
-            </div>
-            <div class="twitter"><a href=""><img src="img\ico-twitter--nocircle.png" alt="twitter"></a>
-            </div>
-            <div class="linkedin"><a href="https://plus.google.com/"><img src="img\ico-linkedin--nocircle.png"
-                        alt="linkedin"></a>
-            </div>
-        </div>
-    </footer>
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
-
-</html>
+-->
