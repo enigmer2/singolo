@@ -28,10 +28,12 @@
             <nav id="id-header-nav-wrapper" class="header-nav-wrapper">
                 <ul id="id-grid-in-grid" class="nav-level-5-grid-in-grid">
                     <li id="id-nav-before-text" class="nav-before-text"><a href="#" class="">HOME</a></li>
-                    <li id="id-nav-before-text" class="nav-before-text"><a href="#services" class="">SERVICES</a></li>
-                    <li id="id-nav-before-text" class="nav-before-text"><a href="#portfolio" class="">PORTFOLIO</a></li>
-                    <li id="id-nav-before-text" class="nav-before-text"><a href="#about" class="">ABOUT</a></li>
-                    <li id="id-nav-before-text" class="nav-before-text"><a href="#contact" class="">CONTACT</a></li>
+                    <li id="id-nav-before-text" class="nav-before-text"><a href="#id-services" class="">SERVICES</a>
+                    </li>
+                    <li id="id-nav-before-text" class="nav-before-text"><a href="#id-portfolio" class="">PORTFOLIO</a>
+                    </li>
+                    <li id="id-nav-before-text" class="nav-before-text"><a href="#id-contact" class="">ABOUT</a></li>
+                    <li id="id-nav-before-text" class="nav-before-text"><a href="#id-contact" class="">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -41,41 +43,12 @@
     <hr class="hr hr-first" />
 
     <!-- Ниже Slideshow  -->
-    <div id="jssor_1" style="
-            position:relative;
-            margin:0 auto;
-            top:0px;
-            left:0px;
-            width:980px;
-            height:594px;
-            overflow:hidden;
-            visibility: hidden;">
+    <div id="id-slideshow" class="slideshow" style="">
         <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="
-                position:absolute;
-                top:0px;
-                left:0px;
-                width:100%;
-                height:100%;
-                text-align:center;
-                background-color:rgba(0,0,0,0.7);
-                ">
-            <img style="
-                margin-top:-19px;
-                position:relative;
-                top:50%;
-                width:38px;
-                height:38px;
-                " src="img/spin.svg" />
+        <div data-u="loading" class="jssorl-009-spin" style="">
+            <img class="slideshow-loading" style="" src="img/spin.svg" />
         </div>
-        <div data-u="slides" style="
-                cursor:default;
-                position:relative;
-                top:0px;left:0px;
-                width:980px;
-                height:594px;
-                overflow:hidden;
-                ">
+        <div data-u="slides" class="slideshow-slides" style="">
             <div>
                 <img data-u="image" src="img/1.jpg" />
             </div>
@@ -85,25 +58,16 @@
         </div>
 
         <!-- Arrow Navigator -->
-        <div id="prev" data-u="arrowleft" class="jssora106" style="
-            width:55px;
-            height:55px;
-            top:250px;
-            left:30px;
-            " data-scale="0.75">
+        <div id="prev" data-u="arrowleft" class="jssora106" style="left:30px;" data-scale="0.75">
             <img src="img/arrow-left.svg" alt="">
         </div>
-        <div id="next" data-u="arrowright" class="jssora106" style="
-            width:55px;
-            height:55px;
-            top:250px;
-            right:0px;" data-scale="0.75">
+        <div id="next" data-u="arrowright" class="jssora106" style="right:0px;" data-scale="0.75">
             <img src="img/arrow-right.svg" alt="">
         </div>
     </div>
     <hr class="hr hr-second" />
     <!-- Ниже Our Services -->
-    <section class="our-services">
+    <section id="id-services" class="our-services">
         <div class="our-services__wrapper">
             <h2 class="our-services__header">Our Services</h2>
             <p class="our-services__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
@@ -171,7 +135,7 @@
     </section>
     <hr class="hr hr-third" />
     <!-- Ниже Portfolio -->
-    <section class="portfolio">
+    <section id="id-portfolio" class="portfolio">
         <div class="portfolio-wrapper">
             <div class="title-portfolio">
                 <h2 class="portfolio__header">Portfolio</h2>
@@ -221,7 +185,7 @@
     </section>
     <hr class="hr hr-fourth" />
     </main>
-    <footer class="footer">
+    <footer id="id-contact" class="footer">
         <div class="footer__wrapper">
             <div class="footer__social-copy">&copy; Copyright 2013</div>
             <nav class="footer__social-nav">
