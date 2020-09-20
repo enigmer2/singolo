@@ -78,6 +78,10 @@
   -o-transform: rotate(90deg);
 }
 .black-fixed-menu-visible {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: fixed;
   width: 278px;
   height: 100vh;
@@ -99,9 +103,21 @@
   left: 71px;
   z-index: 9999999999;
 }
+.black-fixed-menu-nav-button {
+  outline: none;
+  border: none;
+  background: transparent;
+  transform-origin: center;
+  transform: translateX(-10px) rotate(90deg);
+  -webkit-transform: translateX(-5px) rotate(90deg);
+  -moz-transform: translateX(-5px) rotate(90deg);
+  -ms-transform: translateX(-5px) rotate(90deg);
+  -o-transform: translateX(-5px) rotate(90deg);
+}
+
 .black-fixed-nav-visible-link {
   display: flex;
-  margin-left: 50px;
+  margin-bottom: 27px;
   flex-direction: column;
 }
 .header-wrapper-71px {
@@ -120,23 +136,45 @@
 .nav-before-text-hidden + .nav-before-text-hidden:before {
   content: none;
 }
+
+.nav-before-text{
+  font-family: Lato;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: -0.035em;
+color: #fff;
+margin-bottom: 0px 27px;
+}
+.singolo2 {
+    position: absolute;
+    width: 92px;
+    height: 24px;
+    left: 83px;
+    top: 14px;
+    /* font-family: Lato; */
+    /* font-style: normal; */
+    /* font-weight: bold; */
+    font-size: 19.6875px;
+    /* line-height: 24px; */
+    letter-spacing: -0.03em;
+    color: #ffffff;
+}
 .nav-before-text-hidden {
   font-family: Lato;
   font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 29px;
-  letter-spacing: 1.035em;
-   margin: 0px 27px;
-}
-
-.nav-before-text-hidden > li > a {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: bold;
+ 
   font-size: 24px;
   line-height: 29px;
- 
+  letter-spacing: -0.035em;
+  margin-bottom: 27px;
+ text-decoration: none;
+}
+
+.nav-before-text-hidden > a {
+color: rgb(255, 255, 255);
+text-decoration: none;
 }
 
 .blue {
@@ -148,6 +186,20 @@
   -o-transition: 0.2s;
   transition-timing-function: ease-in-out;
 }
+.singolo2 {
+  position: absolute;
+  width: 92px;
+  height: 24px;
+  left: 83px;
+  top: 14px;
+  font-size: 19.6875px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.singolo2::after {
+  content: "∗";
+  vertical-align: super;
+  color: #f06c64;
 
 /*
 .nav-level-3-black-list {
@@ -224,10 +276,7 @@
     vertical-align: baseline;
     
   }
-  .singolo2 {
-    font-size: 19.6875px;
-       letter-spacing: -0.03em;
-  }
+  
 }
 
 .nav-level-4-grid2 {
