@@ -32,7 +32,7 @@
 .singolo {
   padding-bottom: 10px;
   float: right;
-  vertical-align: baseline;
+  align-items: center;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
