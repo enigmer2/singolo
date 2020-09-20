@@ -1,6 +1,6 @@
 /*         \/\/\/           our-services        \/\/\/            */
 
-.section {
+.Our-Services {
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -14,7 +14,7 @@
 .section--background_dark {
   background-color: var(--bg-color);
 }
-.section__header {
+.Our-Services__header {
   font-weight: 900;
   font-size: 30px;
   color: var(--header-color);
@@ -70,12 +70,12 @@
   line-height: 1.8;
   text-align: justify;
 }
-.wrapper {
+.portfolio-wrapper {
   max-width: 1020px;
   margin: 0 auto;
   padding: 60px 30px 68px 30px;
 }
-.wrapper2 {
+.Our-Services__wrapper {
   max-width: 1020px;
   margin: 0 auto;
   padding: 60px 40px 65px 40px;
@@ -121,11 +121,10 @@
   height: 100%;
   object-fit: cover;
 }
-.link-Style {
+.link-style {
   display: flex;
-  margin-left: 8px;
   flex-direction: row;
-  flex-wrap: ;
+  flex-wrap: wrap;
 }
 .text-portfolio {
   text-align: justify;
@@ -133,6 +132,7 @@
   font-size: 18px;
   line-height: 30px;
   margin-top: 14px;
+  margin-bottom: 14px;
   color: #767e9e;
 }
 .button {
@@ -141,6 +141,7 @@
   border: 1px solid #767e9e;
   color: #767e9e;
   padding: 5px;
+  margin-right: 8px;
   text-align: center;
   display: inline-block;
   font-size: 12px;
