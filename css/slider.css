@@ -1,128 +1,135 @@
-/* слиот сляйдов */
-
-.slide1 {
-  width: 1020px;
-  height: 594px;
-  background-color: #f06c64;
-  position: relative;
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: hotpink;
 }
 
-.slide2 {
-  width: 1020px;
-  height: 594px;
-  background-color: #648bf0;
-  position: relative;
+@keyframes jssorl-009-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.img_pos1 {
+/*jssor slider arrow skin 106 css*/
+.jssora106 {
+  display: block;
   position: absolute;
-  top: 54px;
-  left: 111px;
-}
-.img_pos2 {
-  position: absolute;
-  top: 176px;
-  left: 425px;
-}
-.img_pos3 {
-  position: absolute;
-  top: 43px;
-  left: 382px;
-}
-.img_pos32 {
-  position: absolute;
-  top: 144px;
-  left: 611px;
-}
-.img_pos33 {
-  position: absolute;
-  top: 152px;
-  left: 251px;
+  cursor: pointer;
 }
 
-/* основной стиль*/
-
-.for-section__slides {
-  width: 100%;
-  height: 100%;
-  max-height: 594px;
-  margin: auto;
-  background-color: #f06c64;
-}
-.slider-wrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 1020px;
-  max-height: 594px;
-  margin: auto;
-  background-color: #f06c64;
-}
-.slider {
-  position: relative;
-  overflow: hidden;
-  display: flex;
+.jssora106 .c {
+  fill: #fff;
+  opacity: 0.3;
 }
 
-.slider__wrapper {
-  display: flex;
-  transition: transform 0.6s ease;
+.jssora106 .a {
+  fill: none;
+  stroke: #000;
+  stroke-width: 350;
+  stroke-miterlimit: 10;
 }
 
-.slider__item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.slider__control {
-  position: absolute;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  color: #fff;
-  text-align: center;
+.jssora106:hover .c {
   opacity: 0.5;
-  height: 50px;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
 }
 
-.slider__control:hover,
-.slider__control:focus {
-  color: #fff;
-  text-decoration: none;
-  outline: 0;
-  opacity: 0.9;
+.jssora106:hover .a {
+  opacity: 0.8;
 }
 
-.slider__control_left {
+.jssora106.jssora106dn .c {
+  opacity: 0.2;
+}
+
+.jssora106.jssora106dn .a {
+  opacity: 1;
+}
+
+.jssora106.jssora106ds {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/*jssor slider thumbnail skin 101 css*/
+.jssort101 .p {
+  position: absolute;
+  top: 0;
   left: 0;
+  box-sizing: border-box;
+  background: #000;
 }
 
-.slider__control_right {
-  right: 0;
+.jssort101 .p .cv {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-.slider__control::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
+.jssort101 .a {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 400;
+  stroke-miterlimit: 10;
+  visibility: hidden;
 }
 
-.slider__control_left::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+.jssort101 .p:hover .cv,
+.jssort101 .p.pdn .cv {
+  border: none;
+  border-color: transparent;
 }
 
-.slider__control_right::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+.jssort101 .p:hover {
+  padding: 2px;
 }
 
-.slider__item > div {
-  line-height: 250px;
-  font-size: 100px;
-  text-align: center;
+.jssort101 .p:hover .cv {
+  background-color: rgba(0, 0, 0, 6);
+  opacity: 0.35;
+}
+
+.jssort101 .p:hover.pdn {
+  padding: 0;
+}
+
+.jssort101 .p:hover.pdn .cv {
+  border: 2px solid rgb(141, 141, 141);
+  background: none;
+  opacity: 0.35;
+}
+
+.jssort101 .pav .cv {
+  border-color: #fff;
+  opacity: 0.35;
+}
+
+.jssort101 .pav .a,
+.jssort101 .p:hover .a {
+  visibility: visible;
+}
+
+.jssort101 .t {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 0.6;
+}
+
+.jssort101 .pav .t,
+.jssort101 .p:hover .t {
+  opacity: 1;
 }
