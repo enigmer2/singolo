@@ -200,15 +200,27 @@
   .nav-level-3-black-list {
     width: 110vw;
   }
+  .singolo {
+    font-size: 20vb;
+  }
 }
 
 @media (max-width: 666px) {
   .singolo {
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
     font-size: 19.6875px;
     line-height: 24px;
     letter-spacing: -0.03em;
   }
-
+  .logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .nav-button {
     color: #fff;
     visibility: visible;
