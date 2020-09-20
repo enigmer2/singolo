@@ -18,7 +18,7 @@ window.jssor_1_slider_init = function () {
     },
   };
 
-  var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+  var jssor_1_slider = new $JssorSlider$("id-slideshow", jssor_1_options);
 
   /*#region responsive code begin*/
 
