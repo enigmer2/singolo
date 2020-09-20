@@ -2,7 +2,7 @@ window.jssor_1_slider_init = function () {
   var jssor_1_SlideshowTransitions = [];
 
   var jssor_1_options = {
-    $AutoPlay: 1,
+    $AutoPlay: 0,
     $SlideshowOptions: {
       $Class: $JssorSlideshowRunner$,
       $Transitions: jssor_1_SlideshowTransitions,

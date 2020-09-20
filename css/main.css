@@ -21,6 +21,7 @@
   margin: 0;
 }
 .our-services__text {
+  text-align: justify;
   font-size: 18px;
   color: var(--text-color);
   line-height: 1.5;
