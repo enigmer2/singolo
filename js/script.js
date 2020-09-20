@@ -17,9 +17,4 @@ $("#shuffle3").click(function () {
 $("#shuffle4").click(function () {
   $(".shuffle").shuffleChildren();
 });
-$(function () {
-  $("#slides").slidesjs({
-    width: 940,
-    height: 528,
-  });
-});
+jssor_1_slider_init();

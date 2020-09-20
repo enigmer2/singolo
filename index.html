@@ -17,14 +17,71 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <header></header>
     <main>
         <h1 class="hidden"></h1>
         <hr class="hr hr-first" />
         <!-- Ниже Slideshow  -->
+        <div id="jssor_1" style="
+            position:relative;
+            margin:0 auto;
+            top:0px;
+            left:0px;
+            width:980px;
+            height:594px;
+            overflow:hidden;
+            visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" class="jssorl-009-spin" style="
+                position:absolute;
+                top:0px;
+                left:0px;
+                width:100%;
+                height:100%;
+                text-align:center;
+                background-color:rgba(0,0,0,0.7);
+                ">
+                <img style="
+                margin-top:-19px;
+                position:relative;
+                top:50%;
+                width:38px;
+                height:38px;
+                " src="img/spin.svg" />
+            </div>
+            <div data-u="slides" style="
+                cursor:default;
+                position:relative;
+                top:0px;left:0px;
+                width:980px;
+                height:594px;
+                overflow:hidden;
+                ">
+                <div>
+                    <img data-u="image" src="img/1.jpg" />
+                </div>
+                <div>
+                    <img data-u="image" src="img/2.jpg" />
+                </div>
+            </div>
 
+            <!-- Arrow Navigator -->
+            <div data-u="arrowleft" class="jssora106" style="
+            width:55px;
+            height:55px;
+            top:162px;
+            left:30px;
+            " data-scale="0.75">
+                <img src="img/arrow-left.svg" alt="">
+            </div>
+            <div data-u="arrowright" class="jssora106" style="
+            width:55px;
+            height:55px;
+            top:162px;
+            right:30px;" data-scale="0.75">
+                <img src="img/arrow-right.svg" alt="">
+            </div>
+        </div>
         <hr class="hr hr-second" />
         <!-- Ниже Our Services -->
         <section class="our-services">
@@ -178,61 +235,10 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/slides.js"></script>
+    <script type="text/javascript" src="js/jssor.slider-28.0.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.shiffle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-
+    <script type="text/javascript"></script>
 </body>
 
 </html>
-
-<!--
-        
-    <header class="header">
-        <nav class="nav-level-1-wrappper">
-            <div id="nav-level-2-black" class="nav-level-2-black">
-                <div id="nav-level-3-black-list">
-                    <div class="nav-level-4-grid">
-                        <div id="menu" class="nav-button">&#9776;</div>
-                        <div class="singolo">SINGOLO</div>
-                        <div class="between"></div>
-                        <ul class="nav-level-5-grid-in-grid">
-                            <li class="nav-before-text"><a href="#" class="">HOME</a></li>
-                            <li class="nav-before-text"><a href="#services" class="">SERVICES</a></li>
-                            <li class="nav-before-text"><a href="#portfolio" class="">PORTFOLIO</a></li>
-                            <li class="nav-before-text"><a href="#about" class="">ABOUT</a></li>
-                            <li class="nav-before-text"><a href="#contact" class="">CONTACT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        </div>
-    </header>
-
-
-          
-        <section class="for-section__slides">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <div class="slider__wrapper">
-                        <div class="slider__item">
-                            <div class="slide1">
-                                <img class="img_pos1" src="img/tel1.png" alt="">
-                                <img class="img_pos2" src="img/tel2.png" alt="">
-                            </div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slide2">
-                                <img class="img_pos3" src="img/tel3.png" alt="">
-                                <img class="img_pos32" src="img/tel32.png" alt="">
-                                <img class="img_pos33" src="img/tel33.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <a class="slider__control slider__control_left" href="#" role="button"></a>
-                    <a class="slider__control slider__control_right" href="#" role="button"></a>
-                </div>
-            </div>
-        </section>
-     
--->
