@@ -186,11 +186,11 @@
     margin-top: 25px;
   }
 }
-@madia (min-width:666px) {
+/*@media (min-width:666px) {
   .black-fixed-menu-visible {
     display: none;
   }
-}
+}*/
 @media (max-width: 666px) {
   .singolo {
     padding-bottom: 0px;
