@@ -218,15 +218,7 @@
     visibility: visible;
     display: block;
   }
-  /*.nav-level-5-grid-in-grid {
-    display: grid;
-    padding-top: 25px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    vertical-align: baseline;
-    display: none;
-  }*/
+
   .black-fixed-nav-visible {
     display: flex;
     flex-direction: column;
