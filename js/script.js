@@ -14,6 +14,18 @@ function menu_change() {
   $("li#id-nav-before-text").toggleClass(
     "nav-before-text nav-before-text-hidden"
   );
+  $(
+    "a#button-menu-home, a#button-menu-serv, a#button-menu-port, a#button-menu-cont"
+  ).toggleClass("open closed-menu-button ");
+}
+function menu_check() {
+  if ($("#menu").attr("menu") == "closed") {
+    $("#menu").attr("menu", "open");
+    menu_change();
+  } else {
+    $("#menu").attr("menu", "closed");
+    menu_change();
+  }
 }
 
 $("#menu").click(function () {
@@ -23,13 +35,24 @@ $("#menu").click(function () {
 $("#next, #prev").click(function () {
   $("body").toggleClass("blue");
 });
-
+$("id-h1-hidden").click(function () {
+  menu_change();
+});
 $("#shuffle, #shuffle2, #shuffle3, #shuffle4").click(function () {
   $(".shuffle").shuffleChildren();
 });
 
-$("#menu").click(() => {
-  menu_change();
+$("#menu, a[class='open']").click(() => {
+  menu_check();
+});
+$(
+  "#button-menu-home, #button-menu-serv, #button-menu-port, #button-menu-cont"
+).click(() => {
+  if (
+    $("#button-menu-home, #button-menu-serv, #button-menu-port, #button-menu-cont").attr("class") == "open") {
+    menu_change();
+  } else {
+  }
 });
 
 jssor_1_slider_init();
