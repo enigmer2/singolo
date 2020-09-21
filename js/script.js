@@ -45,6 +45,7 @@ $("#shuffle, #shuffle2, #shuffle3, #shuffle4").click(function () {
 $("#menu, a[class='open']").click(() => {
   menu_check();
 });
+<<<<<<< HEAD
 $(
   "#button-menu-home, #button-menu-serv, #button-menu-port, #button-menu-cont"
 ).click(() => {
@@ -55,4 +56,6 @@ $(
   }
 });
 
+=======
+>>>>>>> 6004b45... fix: ))
 jssor_1_slider_init();

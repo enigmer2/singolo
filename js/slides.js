@@ -2,7 +2,11 @@ window.jssor_1_slider_init = function () {
   var jssor_1_SlideshowTransitions = [];
 
   var jssor_1_options = {
+<<<<<<< HEAD
     $AutoPlay: 0,
+=======
+    $AutoPlay: 1,
+>>>>>>> 6004b45... fix: ))
     $SlideshowOptions: {
       $Class: $JssorSlideshowRunner$,
       $Transitions: jssor_1_SlideshowTransitions,
@@ -18,7 +22,11 @@ window.jssor_1_slider_init = function () {
     },
   };
 
+<<<<<<< HEAD
   var jssor_1_slider = new $JssorSlider$("id-slideshow", jssor_1_options);
+=======
+  var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+>>>>>>> 6004b45... fix: ))
 
   /*#region responsive code begin*/
 
