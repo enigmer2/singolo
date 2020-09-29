@@ -15,6 +15,12 @@
 
     <title>Singolo</title>
 </head>
+<!-- $(window).scroll(function () {alert($(window).scrollTop());});
+$(window).scroll(function(){alert($(window).scrollTop());}); 
+272
+1408
+1900
+-->
 
 <body>
     <header>
@@ -27,43 +33,18 @@
             <div class="logo"><span>SINGOLO<sup class="logo-accent">*</sup></span></div>
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#id-services">SERVICES</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#id-portfolio">PORTFOLIO</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#id-contact">ABOUT</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#id-contact">HOME</a></li>
-                    <li class="navigation-list-item"><a class="navigation-list-link" href="#id-contact">CONTACT</a></li>
+                    <li class="navigation-list-item"><a id="Home" class="navigation-list-link" href="#">HOME</a></li>
+                    <li class="navigation-list-item"><a id="Services" class="navigation-list-link" href="#id-services">SERVICES</a>
+                    </li>
+                    <li class="navigation-list-item"><a id="Portfolio" class="navigation-list-link" href="#id-portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="navigation-list-item"><a id="About" class="navigation-list-link" href="#id-contact">ABOUT</a></li>
+                    <li class="navigation-list-item"><a id="Contact" class="navigation-list-link" href="#id-contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!--   <header id="id-header" class="header">
-        <div id="id-header-wrapper" class="header-wrapper">
-            <div id="visible-menu" class="logo">
-                <button id="menu" class="nav-button" menu="closed">
-                    <img src="img/menu.svg" alt="">
-                </button>
-                <p id="id-singolo" class="singolo">SINGOLO</p>
-            </div>
-            <nav id="id-header-nav-wrapper" class="header-nav-wrapper">
-                <ul id="id-grid-in-grid" class="nav-level-5-grid-in-grid">
-                    <li id="id-nav-before-text" class="nav-before-text">
-                        <a id="button-menu-home" class="closed-menu-button" href="#">HOME</a></li>
-                    <li id="id-nav-before-text" class="nav-before-text">
-                        <a id="button-menu-serv" class="closed-menu-button" href="#id-services">SERVICES</a>
-                    </li>
-                    <li id="id-nav-before-text" class="nav-before-text">
-                        <a id="button-menu-port" class="closed-menu-button" href="#id-portfolio">PORTFOLIO</a>
-                    </li>
-                    <li id="id-nav-before-text" class="nav-before-text">
-                        <a id="button-menu-cont" class="closed-menu-button" href="#id-contact">ABOUT</a>
-                    </li>
-                    <li id="id-nav-before-text" class="nav-before-text">
-                        <a id="button-menu-cont" class="closed-menu-button" href="#id-contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header> -->
+
     <!-- <main> -->
     <h1 id="id-h1-hidden" class="hidden"></h1>
     <hr class="hr hr-first" />
@@ -92,6 +73,7 @@
         </div>
     </section>
     <hr class="hr hr-second" />
+
     <!-- Ниже Our Services -->
     <section id="id-services" class="our-services">
         <div class="our-services__wrapper">
@@ -160,6 +142,7 @@
         </div>
     </section>
     <hr class="hr hr-third" />
+
     <!-- Ниже Portfolio -->
     <section id="id-portfolio" class="portfolio">
         <div class="portfolio-wrapper">
@@ -207,6 +190,7 @@
     </section>
     <hr class="hr hr-fourth" />
     </main>
+
     <footer id="id-contact" class="footer">
         <div class="footer__wrapper">
             <div class="footer__social-copy">&copy; Copyright 2013</div>
