@@ -201,12 +201,12 @@
     line-height: 24px;
     letter-spacing: -0.03em;
   }
-  .logo {
+  /* .logo {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
+  } */
   .black-fixed-logo-visible {
     width: 278px;
   }
@@ -250,12 +250,12 @@
   .nav-level-3-black-list {
     width: 110vw;
   }
-  .logo {
+  /* .logo {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-  }
+  } */
   .nav-button {
     margin-top: 10px;
   }
