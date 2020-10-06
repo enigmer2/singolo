@@ -1,7 +1,7 @@
 window.jssor_1_slider_init = function () {
-  var jssor_1_SlideshowTransitions = [];
+  const jssor_1_SlideshowTransitions = [];
 
-  var jssor_1_options = {
+  const jssor_1_options = {
     $AutoPlay: 0,
     $SlideshowOptions: {
       $Class: $JssorSlideshowRunner$,
@@ -18,18 +18,24 @@ window.jssor_1_slider_init = function () {
     },
   };
 
-  var jssor_1_slider = new $JssorSlider$("id-slideshow", jssor_1_options);
+  const jssor_1_slider = new $JssorSlider$(
+    "section-slideshow",
+    jssor_1_options
+  );
 
   /*#region responsive code begin*/
 
-  var MAX_WIDTH = 1020;
+  const MAX_WIDTH = 1020;
 
   function ScaleSlider() {
-    var containerElement = jssor_1_slider.$Elmt.parentNode;
-    var containerWidth = containerElement.clientWidth;
+    const containerElement = jssor_1_slider.$Elmt.parentNode;
+    const containerWidth = containerElement.clientWidth;
 
     if (containerWidth) {
-      var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+      const expectedWidth = Math.min(
+        MAX_WIDTH || containerWidth,
+        containerWidth
+      );
 
       jssor_1_slider.$ScaleWidth(expectedWidth);
     } else {

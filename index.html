@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleHtml.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-html.css" />
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
@@ -15,12 +15,6 @@
 
     <title>Singolo</title>
 </head>
-<!-- $(window).scroll(function () {alert($(window).scrollTop());});
-$(window).scroll(function(){alert($(window).scrollTop());}); 
-272
-1408
-1900
--->
 
 <body>
     <header>
@@ -33,24 +27,32 @@ $(window).scroll(function(){alert($(window).scrollTop());});
             <div class="logo"><span>SINGOLO<sup class="logo-accent">*</sup></span></div>
             <nav class="navigation">
                 <ul class="navigation-list">
-                    <li class="navigation-list-item"><a id="Home" class="navigation-list-link" href="#">HOME</a></li>
-                    <li class="navigation-list-item"><a id="Services" class="navigation-list-link" href="#id-services">SERVICES</a>
+                    <li class="navigation-list-item">
+                        <a id="home" class="navigation-list-link" href="#">HOME</a>
                     </li>
-                    <li class="navigation-list-item"><a id="Portfolio" class="navigation-list-link" href="#id-portfolio">PORTFOLIO</a>
+                    <li class="navigation-list-item">
+                        <a id="services" class="navigation-list-link" href="#section-services">SERVICES</a>
                     </li>
-                    <li class="navigation-list-item"><a id="About" class="navigation-list-link" href="#id-contact">ABOUT</a></li>
-                    <li class="navigation-list-item"><a id="Contact" class="navigation-list-link" href="#id-contact">CONTACT</a></li>
+                    <li class="navigation-list-item">
+                        <a id="portfolio" class="navigation-list-link" href="#section-portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a id="about" class="navigation-list-link" href="#section-contact">ABOUT</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a id="contact" class="navigation-list-link" href="#section-contact">CONTACT</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- <main> -->
-    <h1 id="id-h1-hidden" class="hidden"></h1>
+    <h1 id="h1-hidden" class="hidden"></h1>
     <hr class="hr hr-first" />
 
     <!-- Ниже Slideshow  -->
-    <section id="id-slideshow" class="slideshow">
+    <section id="section-slideshow" class="slideshow">
         <!-- Loading Screen -->
         <div data-u="loading" class="jssorl-009-spin">
             <img class="slideshow-loading" src="img/spin.svg" />
@@ -75,9 +77,9 @@ $(window).scroll(function(){alert($(window).scrollTop());});
     <hr class="hr hr-second" />
 
     <!-- Ниже Our Services -->
-    <section id="id-services" class="our-services">
+    <section id="section-services" class="our-services">
         <div class="our-services__wrapper">
-            <h2 class="our-services__header">Our Services</h2>
+            <div class="our-services__header">Our Services</div>
             <p class="our-services__text"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                 mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
                 tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -144,10 +146,10 @@ $(window).scroll(function(){alert($(window).scrollTop());});
     <hr class="hr hr-third" />
 
     <!-- Ниже Portfolio -->
-    <section id="id-portfolio" class="portfolio">
+    <section id="section-portfolio" class="portfolio">
         <div class="portfolio-wrapper">
             <div class="title-portfolio">
-                <h2 class="portfolio__header">Portfolio</h2>
+                <div class="portfolio__header">Portfolio</div>
             </div>
             <p class="text-portfolio">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
                 sem nec elit.</p>
@@ -191,23 +193,36 @@ $(window).scroll(function(){alert($(window).scrollTop());});
     <hr class="hr hr-fourth" />
     </main>
 
-    <footer id="id-contact" class="footer">
+    <footer id="section-contact" class="footer">
         <div class="footer__wrapper">
             <div class="footer__social-copy">&copy; Copyright 2013</div>
-            <nav class="footer__social-nav">
-                <a class="footer__social-nav-link" href="https://www.facebook.com">
-                    <img src="img\ico-facebook.png" alt="facebook">
-                </a>
-                <a class="footer__social-nav-link" href="https://plus.google.com/">
-                    <img src="img\ico-google-plus.png" alt="google">
-                </a>
-                <a class="footer__social-nav-link" href="https://twitter.com/">
-                    <img src="img\ico-twitter.png" alt="twitter">
-                </a>
-                <a class="footer__social-nav-link" href="https://www.linkedin.com/feed/">
-                    <img src="img\ico-linkedin.png" alt="linkedin">
-                </a>
+            
+            
+            <nav>
+                <ul class="footer__social-nav">
+                    <li class="footer__social-nav-link">
+                        <a href="https://www.facebook.com">
+                            <img src="img\ico-facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://plus.google.com/">
+                            <img src="img\ico-google-plus.png" alt="google">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://twitter.com/">
+                            <img src="img\ico-twitter.png" alt="twitter">
+                        </a>
+                    </li>
+                    <li class="footer__social-nav-link">
+                        <a href="https://www.linkedin.com/feed/">
+                            <img src="img\ico-linkedin.png" alt="linkedin">
+                        </a>
+                    </li>
+                </ul>
             </nav>
+        
         </div>
     </footer>
 
