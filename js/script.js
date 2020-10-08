@@ -5,7 +5,9 @@ $(".menu-open-button").click(() => {
 $("#next, #prev").click(function () {
   $("body").toggleClass("blue");
 });
-$("#shuffle, #shuffle2, #shuffle3, #shuffle4").click(function () {
+$(
+  "#shuffleAll, #shuffleWebDesign, #shuffleGraphicDesign, #shuffleArtwork"
+).click(function () {
   $(".shuffle").shuffleChildren();
 });
 
@@ -24,29 +26,29 @@ $(
 $(window).scroll(function () {
   let windowTopPosition = $(window).scrollTop();
   if (windowTopPosition >= 0 && windowTopPosition < 272) {
-    $("#home").addClass("navigation-list-link-active"),
-      $("#services").removeClass("navigation-list-link-active"),
-      $("#portfolio").removeClass("navigation-list-link-active"),
-      $("#about").removeClass("navigation-list-link-active"),
-      $("#contact").removeClass("navigation-list-link-active");
+    $("#home").addClass("navigation-list-link-active");
+    $("#services").removeClass("navigation-list-link-active");
+    $("#portfolio").removeClass("navigation-list-link-active");
+    $("#about").removeClass("navigation-list-link-active");
+    $("#contact").removeClass("navigation-list-link-active");
   } else if (windowTopPosition >= 272 && windowTopPosition < 700) {
-    $("#home").removeClass("navigation-list-link-active"),
-      $("#services").addClass("navigation-list-link-active"),
-      $("#portfolio").removeClass("navigation-list-link-active"),
-      $("#about").removeClass("navigation-list-link-active"),
-      $("#contact").removeClass("navigation-list-link-active");
+    $("#home").removeClass("navigation-list-link-active");
+    $("#services").addClass("navigation-list-link-active");
+    $("#portfolio").removeClass("navigation-list-link-active");
+    $("#about").removeClass("navigation-list-link-active");
+    $("#contact").removeClass("navigation-list-link-active");
   } else if (windowTopPosition >= 700 && windowTopPosition < 1000) {
-    $("#home").removeClass("navigation-list-link-active"),
-      $("#services").removeClass("navigation-list-link-active"),
-      $("#portfolio").addClass("navigation-list-link-active"),
-      $("#about").removeClass("navigation-list-link-active"),
-      $("#contact").removeClass("navigation-list-link-active");
+    $("#home").removeClass("navigation-list-link-active");
+    $("#services").removeClass("navigation-list-link-active");
+    $("#portfolio").addClass("navigation-list-link-active");
+    $("#about").removeClass("navigation-list-link-active");
+    $("#contact").removeClass("navigation-list-link-active");
   } else {
-    $("#home").removeClass("navigation-list-link-active"),
-      $("#services").removeClass("navigation-list-link-active"),
-      $("#portfolio").removeClass("navigation-list-link-active"),
-      $("#about").removeClass("navigation-list-link-active"),
-      $("#contact").addClass("navigation-list-link-active");
+    $("#home").removeClass("navigation-list-link-active");
+    $("#services").removeClass("navigation-list-link-active");
+    $("#portfolio").removeClass("navigation-list-link-active");
+    $("#about").removeClass("navigation-list-link-active");
+    $("#contact").addClass("navigation-list-link-active");
   }
 });
 
